@@ -1,0 +1,9 @@
+{
+  "additionalFiles": "",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "",
+  "fqbn": "esp32:esp32:esp32",
+  "hardwareFolders": "/home/jamppi/.arduino15/packages/esp32/hardware/esp32/3.3.12,/home/jamppi/.arduino15/packages/esp32/hardware/esp32/3.3.12",
+  "otherLibrariesFolders": "/home/jamppi/Arduino/libraries",
+  "sketchLocation": "/home/jamppi/proyecto-iot/esp32/sketch"
+}

@@ -7,8 +7,8 @@ const char* ssid = "Wokwi-GUEST";
 const char* password = "";
 
 // ---- Broker MQTT (se reemplaza con la URL de ngrok) ----
-const char* mqtt_server = "CAMBIAR_HOST_NGROK";
-const int mqtt_port = 0; // CAMBIAR_PUERTO_NGROK
+const char* mqtt_server = "0.tcp.sa.ngrok.io";
+const int mqtt_port = 27435; // CAMBIAR_PUERTO_NGROK
 
 const char* topic_datos = "esp32/sensor";
 const char* topic_comandos = "esp32/comandos";
