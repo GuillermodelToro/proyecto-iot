@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "William Pinedo",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -105.3, "left": -139.8, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 30, "left": 170, "attrs": { "color": "red" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": 110, "left": 120, "rotate": 90, "attrs": { "value": "220" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "dht1:VCC", "red", [] ],
+    [ "esp:GND.1", "dht1:GND", "black", [] ],
+    [ "esp:15", "dht1:SDA", "yellow", [] ],
+    [ "esp:2", "r1:1", "orange", [] ],
+    [ "r1:2", "led1:A", "orange", [] ],
+    [ "led1:C", "esp:GND.2", "black", [] ]
+  ],
+  "dependencies": {}
+}

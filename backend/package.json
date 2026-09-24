@@ -1,0 +1,14 @@
+{
+  "name": "backend-iot",
+  "version": "1.0.0",
+  "description": "API backend que conecta la app React Native con el ESP32 via MQTT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mqtt": "^5.10.1"
+  }
+}
